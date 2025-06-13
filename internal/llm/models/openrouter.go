@@ -24,7 +24,7 @@ const (
 	OpenRouterClaude3Opus    ModelID = "openrouter.claude-3-opus"
 	OpenRouterDeepSeekV3Free ModelID = "openrouter.deepseek-v3-free"
 	OpenRouterDeepSeekR1Free ModelID = "openrouter.deepseek-r1-free"
-	OpenRouterDeepSeekR1Qwen38BFree ModelID = "OpenRouter – DeepSeek R1 Qwen3 8B Free"
+	OpenRouterDeepSeekR1Qwen38BFree ModelID = "openRouter.deepseek-r1-qwen3-free"
 )
 
 var OpenRouterModels = map[ModelID]Model{
