@@ -24,6 +24,7 @@ const (
 	OpenRouterClaude3Opus    ModelID = "openrouter.claude-3-opus"
 	OpenRouterDeepSeekV3Free ModelID = "openrouter.deepseek-v3-free"
 	OpenRouterDeepSeekR1Free ModelID = "openrouter.deepseek-r1-free"
+	OpenRouterDeepSeekR1Qwen38BFree ModelID = "OpenRouter – DeepSeek R1 Qwen3 8B Free"
 )
 
 var OpenRouterModels = map[ModelID]Model{
@@ -275,11 +276,24 @@ var OpenRouterModels = map[ModelID]Model{
 		DefaultMaxTokens:   10000,
 	},
 
-	OpenRouterDeepSeekR1Free: {
+	OpenRouterDeepSeekV3Free: {
 		ID:                 OpenRouterDeepSeekV3Free,
 		Name:               "OpenRouter – DeepSeek V3 Free",
 		Provider:           ProviderOpenRouter,
 		APIModel:           "deepseek/deepseek-chat-v3-0324:free",
+		CostPer1MIn:        0,
+		CostPer1MInCached:  0,
+		CostPer1MOut:       0,
+		CostPer1MOutCached: 0,
+		ContextWindow:      163_840,
+		DefaultMaxTokens:   10000,
+	},
+	
+	OpenRouterDeepSeekR1Qwen38BFree: {
+		ID:                 OpenRouterDeepSeekR1Qwen38BFree,
+		Name:               "OpenRouter – DeepSeek R1 Qwen3 8B Free",
+		Provider:           ProviderOpenRouter,
+		APIModel:           "deepseek/deepseek-r1-0528-qwen3-8b:free",
 		CostPer1MIn:        0,
 		CostPer1MInCached:  0,
 		CostPer1MOut:       0,
